@@ -1,9 +1,10 @@
 import { create } from 'zustand';
 import { axiosInstance } from '~/lib/axios';
+import type { Album, Song } from '~/types';
 
 interface MusicStore {
-  albums: any[];
-  songs: any[];
+  albums: Album[];
+  songs: Song[];
   isLoading: boolean;
   error: string | null;
   fetchAlbums: () => Promise<void>; // vì đây là hàm bất đồng bộ
