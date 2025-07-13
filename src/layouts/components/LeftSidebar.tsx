@@ -1,6 +1,6 @@
 import { SignedIn } from '@clerk/clerk-react';
 import { HomeIcon, Library, MessageCircle } from 'lucide-react';
-import { use, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PlaylistSkeleton from '~/components/skeletons/PlaylistSkeleton';
 import { buttonVariants } from '~/components/ui/button';
